@@ -14,8 +14,9 @@ section.consultation
                     | Для 
                     span.consultation__form-title--accent консультации 
                     | заполните форму!
-                p.consultation__form-text 
+                p.consultation__form-text С Вами свяжутся в ближайшее время
                 form(action="" method="POST" ).consultation__form
-                    input(type="text" id='firstNameField' name='first-name' placeholder="Ваше имя").consultation__form__field
-                    input(type="tel" id='phoneNumberField' name='phone' placeholder="Ваш телефон").fconsultation__form__field
-                    button.consultation__form-button 
+                    .consultation__form-fields
+                        input(type="text" id='firstNameField' name='first-name' placeholder="Ваше имя").consultation__form__field
+                        input(type="tel" id='phoneNumberField' name='phone' placeholder="Ваш телефон").consultation__form__field
+                        button.consultation__form-button отправить
