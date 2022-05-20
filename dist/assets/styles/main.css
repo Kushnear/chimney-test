@@ -1,159 +1,308 @@
+@font-face {
+  font-family: "light";
+  src: url("../../assets/fonts/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: "regular";
+  src: url("../../assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "medium";
+  src: url("../../assets/fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "semibold";
+  src: url("../../assets/fonts/Montserrat-Semibold.ttf");
+}
+@font-face {
+  font-family: "bold";
+  src: url("../../assets/fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "extrabold";
+  src: url("../../assets/fonts/Montserrat-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "thin";
+  src: url("../../assets/fonts/Montserrat-Thin.ttf");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.separator {
+  width: 74px;
+  height: 5px;
+  background-color: #E33E54;
+}
+
 /* Document
- * ========================================================================== *//**
+ * ========================================================================== */
+
+/**
  * 1. Correct the line height in all browsers.
  */
+
 :where(html) {
   line-height: 1.15; /* 1 */
-}/* Sections
- * ========================================================================== *//**
+}
+
+/* Sections
+ * ========================================================================== */
+
+/**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Edge, Firefox, and Safari.
  */
+
 :where(h1) {
   font-size: 2em;
   -webkit-margin-after: 0.67em;
           margin-block-end: 0.67em;
   -webkit-margin-before: 0.67em;
           margin-block-start: 0.67em;
-}/* Grouping content
- * ========================================================================== *//**
+}
+
+/* Grouping content
+ * ========================================================================== */
+
+/**
  * Remove the margin on nested lists in Chrome, Edge, and Safari.
  */
+
 :where(dl, ol, ul) :where(dl, ol, ul) {
   -webkit-margin-after: 0;
           margin-block-end: 0;
   -webkit-margin-before: 0;
           margin-block-start: 0;
-}/**
+}
+
+/**
  * 1. Add the correct box sizing in Firefox.
  * 2. Correct the inheritance of border color in Firefox.
  */
+
 :where(hr) {
   box-sizing: content-box; /* 1 */
   color: inherit; /* 2 */
   height: 0; /* 1 */
-}/**
+}
+
+/**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
 :where(pre) {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
-}/* Text-level semantics
- * ========================================================================== *//**
+}
+
+/* Text-level semantics
+ * ========================================================================== */
+
+/**
  * Add the correct text decoration in Safari.
  */
+
 :where(abbr[title]) {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
-}/**
+}
+
+/**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
+
 :where(b, strong) {
   font-weight: bolder;
-}/**
+}
+
+/**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
 :where(code, kbd, samp) {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
-}/**
+}
+
+/**
  * Add the correct font size in all browsers.
  */
+
 :where(small) {
   font-size: 80%;
-}/* Tabular data
- * ========================================================================== *//**
+}
+
+/* Tabular data
+ * ========================================================================== */
+
+/**
  * 1. Correct table border color in Chrome, Edge, and Safari.
  * 2. Remove text indentation from table contents in Chrome, Edge, and Safari.
  */
+
 :where(table) {
   border-color: currentColor; /* 1 */
   text-indent: 0; /* 2 */
-}/* Forms
- * ========================================================================== *//**
+}
+
+/* Forms
+ * ========================================================================== */
+
+/**
  * Remove the margin on controls in Safari.
  */
+
 :where(button, input, select) {
   margin: 0;
-}/**
+}
+
+/**
  * Remove the inheritance of text transform in Firefox.
  */
+
 :where(button) {
   text-transform: none;
-}/**
+}
+
+/**
  * Correct the inability to style buttons in iOS and Safari.
  */
+
 :where(button, input:is([type="button" i], [type="reset" i], [type="submit" i])) {
   -webkit-appearance: button;
-}/**
+}
+
+/**
  * Add the correct vertical alignment in Chrome, Edge, and Firefox.
  */
+
 :where(progress) {
   vertical-align: baseline;
-}/**
+}
+
+/**
  * Remove the inheritance of text transform in Firefox.
  */
+
 :where(select) {
   text-transform: none;
-}/**
+}
+
+/**
  * Remove the margin in Firefox and Safari.
  */
+
 :where(textarea) {
   margin: 0;
-}/**
+}
+
+/**
  * 1. Correct the odd appearance in Chrome, Edge, and Safari.
  * 2. Correct the outline style in Safari.
  */
+
 :where(input[type="search" i]) {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
-}/**
+}
+
+/**
  * Correct the cursor style of increment and decrement buttons in Safari.
  */
+
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
-}/**
+}
+
+/**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
+
 ::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.54;
-}/**
+}
+
+/**
  * Remove the inner padding in Chrome, Edge, and Safari on macOS.
  */
+
 ::-webkit-search-decoration {
   -webkit-appearance: none;
-}/**
+}
+
+/**
  * 1. Correct the inability to style upload buttons in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
+
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
-}/**
+}
+
+/**
  * Remove the inner border and padding of focus outlines in Firefox.
  */
+
 :where(button, input:is([type="button" i], [type="color" i], [type="reset" i], [type="submit" i]))::-moz-focus-inner {
   border-style: none;
   padding: 0;
-}/**
+}
+
+/**
  * Restore the focus outline styles unset by the previous rule in Firefox.
  */
+
 :where(button, input:is([type="button" i], [type="color" i], [type="reset" i], [type="submit" i]))::-moz-focusring {
   outline: 1px dotted ButtonText;
-}/**
+}
+
+/**
  * Remove the additional :invalid styles in Firefox.
  */
+
 :where(:-moz-ui-invalid) {
   box-shadow: none;
-}/* Interactive
- * ========================================================================== *//*
+}
+
+/* Interactive
+ * ========================================================================== */
+
+/*
  * Add the correct styles in Safari.
  */
+
 :where(dialog) {
   background-color: white;
   border: solid;
@@ -170,12 +319,337 @@
   width: -webkit-fit-content;
   width: fit-content;
 }
+
 :where(dialog:not([open])) {
   display: none;
-}/*
+}
+
+/*
  * Add the correct display in all browsers.
  */
+
 :where(summary) {
   display: list-item;
+}
+.header__container {
+  max-width: 1785px;
+  margin: 0 auto;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
+  margin-bottom: 30px;
+}
+.header__logo {
+  width: 100px;
+  height: 100px;
+}
+.header__burger {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.header__burger-border {
+  height: 56px;
+  width: 56px;
+  postion: absolute;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4c858b;
+  border-radius: 50%;
+}
+.header__burger-line {
+  position: absolute;
+  width: 22px;
+  border: 1px solid #4c858b;
+  border-radius: 5px;
+}
+.header__burger-line--top {
+  top: 17.92px;
+  left: 22.5px;
+}
+.header__burger-line--middle {
+  top: 27.08px;
+  left: 22.5px;
+}
+.header__burger-line--bottom {
+  top: 36.25px;
+  left: 22.5px;
+}
+.header__navigation {
+  flex-basis: 665px;
+}
+.header__navigation-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header__navigation-item {
+  color: #4c858b;
+  font-family: "bold", sans-serif;
+  list-style-type: none;
+}
+.header__phone-number {
+  font-family: "light", sans-serif;
+  flex-basis: 161px;
+}
+.header__phone-number--bold {
+  font-family: "semiBold", sans-serif;
+}
+.header__call-me {
+  flex-basis: 156px;
+}
+.header__call-me p {
+  font-family: bold;
+  color: #AE2236;
+  border-bottom: 1px dotted;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.header__social {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 115px;
+}
+.header__social-link {
+  text-decoration: none;
+}
+.header__shopping-group {
+  flex-basis: 202px;
+}
+.header__shopping-button {
+  position: relative;
+  border: 1px solid #E5E5E5;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+.header__shopping-button--cart:after {
+  font-size: 11px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "10";
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 21px;
+  height: 21px;
+  background-color: #E33E54;
+}
+
+.hero__container {
+  max-width: 1220px;
+  margin-bottom: 47px;
+}
+.hero__title {
+  font-family: "bold";
+  font-size: 60px;
+  margin-bottom: 41px;
+}
+.hero__home {
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #E5E5E5;
+  padding: 16px 0;
+  margin-bottom: 81px;
+}
+.hero__home-link {
+  position: relative;
+  text-decoration: none;
+  font-family: regular;
+  color: #b1b1b1;
+  font-size: 12px;
+  margin-right: 20px;
+}
+.hero__home-link::after {
+  padding: 2px;
+  position: absolute;
+  top: 6px;
+  left: 54px;
+  content: "";
+  border: solid #4c858b;
+  border-width: 0 1px 1px 0;
+  transform: rotate(-45deg);
+  border-radius: 0.5px;
+}
+.hero__home-location {
+  font-size: 12px;
+  font-family: regular;
+  color: #4c858b;
+}
+.hero__text {
+  font-family: regular;
+  font-size: 16px;
+  line-height: 30px;
+}
+.hero__text--accent {
+  color: #AE2236;
+}
+
+.banner__container {
+  max-width: 1380px;
+  display: flex;
+  justify-content: end;
+}
+.banner__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64.46px;
+}
+.banner__text-wrapper {
+  line-height: 63px;
+}
+.banner__title-wrapper {
+  margin-bottom: 39px;
+}
+.banner__title-medium {
+  font-family: semibold, sans-serif;
+  font-size: 40px;
+}
+.banner__title-big {
+  font-family: extrabold;
+  font-size: 50px;
+  color: #E33E54;
+}
+.banner__advantage-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 360px;
+}
+.banner__advantage-item {
+  font-family: regular;
+  font-size: 16px;
+  line-height: 24px;
+}
+.banner__advantage-item::marker {
+  color: #EA6628;
+  font-size: 150%;
+  font-family: bold;
+  vertical-align: middle;
+  list-style-position: inside;
+}
+
+.mounting__container {
+  margin-bottom: 88px;
+}
+.mounting__separator {
+  margin-bottom: 11px;
+}
+.mounting__title {
+  font-family: semibold;
+  font-size: 40px;
+  margin-bottom: 51px;
+}
+.mounting__services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 278px;
+}
+.mounting__services-item {
+  height: 80.5px;
+  display: flex;
+  align-items: center;
+}
+.mounting__services-number {
+  font-family: bold;
+  font-size: 70px;
+  margin-right: 42px;
+  color: red;
+}
+.mounting__services-description {
+  font-family: regular;
+  font-size: 16px;
+  max-width: 500px;
+}
+
+.why__container {
+  margin-bottom: 98px;
+}
+.why__separator {
+  margin-bottom: 11px;
+}
+.why__title {
+  font-size: 40px;
+  font-family: semibold;
+  margin-bottom: 50px;
+}
+.why__text {
+  font-size: 16px;
+  font-family: regular;
+  margin-bottom: 50px;
+}
+.why__advantages {
+  display: flex;
+  justify-content: space-between;
+}
+.why__advantages-card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 386px;
+}
+.why__advantages-card svg {
+  margin-bottom: 32px;
+}
+.why__advantages-card-title {
+  font-family: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.why__advantages-card-text {
+  font-family: regular;
+  line-height: 30px;
+}
+.why__advantages-card-text--accent {
+  color: #E33E54;
+}
+
+.consultation__title {
+  font-size: 50px;
+  font-family: extraBold;
+  text-align: center;
+  margin-bottom: 29px;
+}
+.consultation__action-call {
+  font-size: 22px;
+  font-family: light;
+  text-align: center;
+  margin-bottom: 46px;
+}
+.consultation__social-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.consultation__social {
+  width: 203px;
+  display: flex;
+  justify-content: space-between;
+}
+.consultation__social svg path {
+  fill: #EA6628;
+}
+.consultation__form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.consultation__form-inner {
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+}
+.consultation__form-title {
+  font-size: 20px;
+  font-family: medium;
+}
+.consultation__form-title--accent {
+  color: #EA6628;
 }
 /*# sourceMappingURL=main.css.map */

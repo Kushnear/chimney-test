@@ -1,0 +1,21 @@
+section.consultation 
+    .container.consultation__container 
+        h2.consultation__title необходима консультация?
+        p.consultation__action-call оставьте заявку или свяжитесь с нами в социальных сетях
+        .consultation__social-wrapper
+            .consultation__social 
+                include ../../assets/icons/vk.svg
+                include ../../assets/icons/telegram.svg
+                include ../../assets/icons/instagram.svg
+                include ../../assets/icons/whatsapp.svg
+        .consultation__form-wrapper
+            .consultation__form-inner
+                p.consultation__form-title 
+                    | Для 
+                    span.consultation__form-title--accent консультации 
+                    | заполните форму!
+                p.consultation__form-text 
+                form(action="" method="POST" ).consultation__form
+                    input(type="text" id='firstNameField' name='first-name' placeholder="Ваше имя").consultation__form__field
+                    input(type="tel" id='phoneNumberField' name='phone' placeholder="Ваш телефон").fconsultation__form__field
+                    button.consultation__form-button 
