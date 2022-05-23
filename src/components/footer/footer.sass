@@ -1,0 +1,79 @@
+.footer
+    background-color: #0C2F33
+    &__container
+        max-width: 1220px
+    &__inner
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        column-gap: 90px
+        padding: 90px 0
+    &__catalog
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 27px 125px
+        grid-row-gap: 18px
+        grid-template-areas: 'title title' 'left right'
+    &__title
+        font-family: bold
+        font-size: 22px
+        color: #FFFFFF
+        grid-area: title
+    &__catalog-item
+        font-family: regular
+        font-size: 14px
+        color: #FFFFFF
+    &__list
+        list-style: none
+        padding: 0
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+    &__link
+        text-decoration: none
+        color: #FFFFFF
+    &__footer__catalog-list--left
+        grid-area: left
+    &__footer__catalog-list--right
+        grid-area: right
+
+    &__information
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 27px 125px
+        grid-row-gap: 18px
+        grid-template-areas: 'title title' 'left right'
+    &__footer__information-list--left
+        grid-area: left
+    &__footer__information-list--right
+        grid-area: right
+
+    &__worktime-schedule
+        display: flex
+        margin-bottom: 8px
+        
+    &__worktime-clock
+        margin-right: 8px
+    &__worktime-text--left
+        margin-right: 12px
+    &__worktime-text--accent
+        font-family: regular
+        font-size: 14px
+        color: #FFFFFF
+    &__worktime-text
+        color: #4C858B
+        font-family: regular
+        font-size: 14px
+    &__worktime-text--adress
+        margin-bottom: 25px
+    &__worktime-social svg
+        margin-right: 36px
+    
+    &__worktime-adress
+        display: flex
+    &__worktime-placeholder
+        margin-right: 7px
+    
+    &__title--worktime 
+        margin-bottom: 16px
+
+    
