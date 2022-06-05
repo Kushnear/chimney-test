@@ -1,6 +1,6 @@
 .mounting
-    &__container
-        margin-bottom: 88px
+    counter-reset: section
+    margin-bottom: 88px
     &__separator
         margin-bottom: 11px
     &__title
@@ -13,19 +13,18 @@
         flex-wrap: wrap
         height: 278px
     &__services-item
-        height: 80.5px
         display: flex
         align-items: center
-        // flex: 1 1 596px
-        // flex-basis: 596px
     &__services-number
         font-family: bold
         font-size: 70px
-        color: #FEF7F8
+        // color: #FEF7F8
         margin-right: 42px
         width: 45px
-        // color: red
-        // /
+        &::before
+            counter-increment: section
+            content: counter(section)
+                
     &__services-description
         font-family: regular
         font-size: 16px

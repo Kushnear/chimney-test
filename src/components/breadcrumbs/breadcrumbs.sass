@@ -1,0 +1,39 @@
+.breadcrumbs
+    margin-bottom: 47px        
+    &__title
+        font-family: 'bold'
+        font-size: 60px
+        margin-bottom: 41px
+    &__home
+        border-top: 1px solid $colorGrey
+        border-bottom: 1px solid $colorGrey
+        padding: 16px 0
+        margin-bottom: 81px
+    &__home-link
+        position: relative
+        text-decoration: none
+        font-family: regular
+        color: $colorPalladium
+        font-size: 12px
+        margin-right: 20px
+        &::after
+            padding: 2px
+            position: absolute
+            top: 6px
+            left: 54px
+            content: ''
+            border: solid $colorSecond
+            border-width: 0 1px 1px 0
+            transform: rotate(-45deg)
+            border-radius: 0.5px
+    &__home-location
+        font-size: 12px
+        font-family: regular
+        color: $colorSecond
+
+    &__text
+        font-family: regular
+        font-size: 16px
+        line-height: 30px
+        &--accent
+            color: $colorCherry

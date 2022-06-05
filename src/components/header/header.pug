@@ -4,43 +4,26 @@ header.header
             a(href="#").header__logo 
                 img(src='../../assets/images/Logo.png', alt='logo')
             button.header__burger
-                .header__burger-border
-                .header__burger-line.header__burger-line--top
-                .header__burger-line.header__burger-line--middle
-                .header__burger-line.header__burger-line--bottom
+                .header__burger-line
             nav.header__navigation
                 ul.header__navigation-list
-                    li.header__navigation-item каталог товаров 
-                    li.header__navigation-item доставка и оплата 
-                    li.header__navigation-item цены
-                    li.header__navigation-item контакты
-            .header__phone-wrapper 
-                p.header__phone-number
-                    | +7 (812) 
-                    span.header__phone-number.header__phone-number--bold 509 21 98 
+                    a(href="#").header__navigation-link
+                        li.header__navigation-item каталог товаров
+                    a(href="#").header__navigation-link
+                        li.header__navigation-item доставка и оплата 
+                    a(href="#").header__navigation-link
+                        li.header__navigation-item цены
+                    a(href="#").header__navigation-link
+                        li.header__navigation-item контакты
+            .header__phone-wrapper
+                a(href='tel:+78125092198').header__phone-link
+                    p.header__phone-number
+                        | +7 (812) 
+                        span.header__phone-number.header__phone-number--bold 509 21 98 
             .header__call-me 
-                p перезвоните мне
+                p.header__call-me-text перезвоните мне
             .header__social
-                //- a(href="#").header__social-link
-                //-     //- img(src="/dist/assets/icons/vk.svg", alt="vk").header__social-icon
-                //-     //- img(src="../../sprite/vk.svg", alt="vk")
-                //-     img(src="/assets/icons/vk.svg", alt="vk").header__social-icon
-                //- a(href="#").header__social-link
-                //-     img(src="/assets/icons/telegram.svg", alt="telegram").header__social-icon
-                //- a(href="#").header__social-link
-                //-     img(src="/assets/icons/instagram.svg", alt="instagram").header__social-icon
-                //- a(href="#").header__social-link
-                //-     img(src="/assets/icons/whatsapp.svg", alt="whatsapp").header__social-icon
-                //- a(href="#").header__social-link
-                //-     img(src="../../assets/", alt="whatsapp").header__social-icon
-                a(href="#").header__social-link
-                    include ../../assets/icons/vk.svg
-                a(href="#").header__social-link
-                    include ../../assets/icons/telegram.svg
-                a(href="#").header__social-link
-                    include ../../assets/icons/instagram.svg
-                a(href="#").header__social-link
-                    include ../../assets/icons/whatsapp.svg
+                include ../social/social
             .header__shopping-group 
                 button.header__shopping-button
                     include ../../assets/icons/loupe.svg

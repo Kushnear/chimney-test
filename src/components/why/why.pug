@@ -1,7 +1,7 @@
 section.why 
-    .container.why__container
+    .container
         .separator.why__separator 
-        h3.why__title Почему Дымоход.ру?
+        h2.section-title Почему Дымоход.ру?
         p.why__text В отличие от других производителей, мы ручаемся за качество продукции, т.к. все Дымоходы изготавливаются из качественной стали, проверенного теплоизолятора, по современной технологии плазменной сварки «встык» 
         .why__advantages 
             .why__advantages-card
@@ -9,13 +9,13 @@ section.why
                p.why__advantages-card-title Большой гарантийный срок
                p.why__advantages-card-text
                 | Крепёж, стыковка элементов
-                span.why__advantages-card-text--accent – 10 лет
+                span.why__advantages-card-text-accent – 10 лет
                p.why__advantages-card-text
                 | Крепёж, стыковка элементов
-                span.why__advantages-card-text--accent – 10 лет
+                span.why__advantages-card-text-accent – 10 лет
                p.why__advantages-card-text
                 | Крепёж, стыковка элементов
-                span.why__advantages-card-text--accent – 10 лет
+                span.why__advantages-card-text-accent – 10 лет
             .why__advantages-card
                 include ../../assets/icons/architect.svg
                 p.why__advantages-card-title Помощь в покупке агрегата 
@@ -24,4 +24,27 @@ section.why
                 include ../../assets/icons/review.svg
                 p.why__advantages-card-title Реальные отзывы клиентов
                 p.why__advantages-card-text Убедитесь в добросовестности исполнения, прочитав Отзывы клиентов в специальном разделе.
+            
+            //- consultetion
+        .why__consultation 
+            h2.why__consultation-title необходима консультация?
+            p.why__consultation-action-call оставьте заявку или свяжитесь с нами в социальных сетях
+            .why__consultation-social-wrapper
+                .why__consultation-social 
+                    include ../../assets/icons/vk.svg
+                    include ../../assets/icons/telegram.svg
+                    include ../../assets/icons/instagram.svg
+                    include ../../assets/icons/whatsapp.svg
+            .why__consultation-form-wrapper
+                .why__consultation-form-inner
+                    p.why__consultation-form-title 
+                        | Для 
+                        span.why__consultation-form-title--accent консультации 
+                        | заполните форму!
+                    p.why__consultation-form-text С Вами свяжутся в ближайшее время
+                    form(action="" method="POST" id='consultaion-form').why__consultation-form
+                        .why__consultation-form-fields
+                            input(type="text" id='first-name-field' name='first-name' placeholder="Ваше имя").why__consultation-form-field
+                            input(type="tel" id='phone-number-field' name='phone' placeholder="Ваш телефон").why__consultation-form-field
+                            button(type='submit' form='consultaion-form' name='submit-button').why__consultation-form-button отправить
 

@@ -13,26 +13,22 @@
         <div class="container header__container">
           <div class="header__wrapper"><a class="header__logo" href="#"> <img src="../../assets/images/Logo.png" alt="logo"></a>
             <button class="header__burger">
-              <div class="header__burger-border"></div>
-              <div class="header__burger-line header__burger-line--top"></div>
-              <div class="header__burger-line header__burger-line--middle"></div>
-              <div class="header__burger-line header__burger-line--bottom"></div>
+              <div class="header__burger-line"></div>
             </button>
             <nav class="header__navigation">
-              <ul class="header__navigation-list">
-                <li class="header__navigation-item">каталог товаров </li>
-                <li class="header__navigation-item">доставка и оплата </li>
-                <li class="header__navigation-item">цены</li>
-                <li class="header__navigation-item">контакты</li>
-              </ul>
+              <ul class="header__navigation-list"><a class="header__navigation-link" href="#">
+                  <li class="header__navigation-item">каталог товаров</li></a><a class="header__navigation-link" href="#">
+                  <li class="header__navigation-item">доставка и оплата </li></a><a class="header__navigation-link" href="#">
+                  <li class="header__navigation-item">цены</li></a><a class="header__navigation-link" href="#">
+                  <li class="header__navigation-item">контакты</li></a></ul>
             </nav>
-            <div class="header__phone-wrapper"> 
-              <p class="header__phone-number">+7 (812) <span class="header__phone-number header__phone-number--bold">509 21 98 </span></p>
-            </div>
+            <div class="header__phone-wrapper"><a class="header__phone-link" href="tel:+78125092198">
+                <p class="header__phone-number">+7 (812) <span class="header__phone-number header__phone-number--bold">509 21 98 </span></p></a></div>
             <div class="header__call-me"> 
-              <p>перезвоните мне</p>
+              <p class="header__call-me-text">перезвоните мне</p>
             </div>
-            <div class="header__social"><a class="header__social-link" href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="header__social">
+              <div class="social"> <a class="social-link" href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_301_49)">
 <path d="M16.5958 10.8567C16.2725 10.4484 16.365 10.2667 16.5958 9.90175C16.6 9.89758 19.2692 6.20925 19.5442 4.95841L19.5458 4.95758C19.6825 4.50175 19.5458 4.16675 18.885 4.16675H16.6983C16.1417 4.16675 15.885 4.45425 15.7475 4.77591C15.7475 4.77591 14.6342 7.44092 13.0592 9.16842C12.5508 9.66758 12.3158 9.82758 12.0383 9.82758C11.9017 9.82758 11.6892 9.66758 11.6892 9.21175V4.95758C11.6892 4.41091 11.5333 4.16675 11.0725 4.16675H7.63417C7.285 4.16675 7.0775 4.42175 7.0775 4.65925C7.0775 5.17758 7.865 5.29675 7.94667 6.75508V9.91925C7.94667 10.6126 7.82083 10.7401 7.54167 10.7401C6.79833 10.7401 4.99417 8.06425 3.925 5.00175C3.70917 4.40758 3.49833 4.16758 2.9375 4.16758H0.75C0.125833 4.16758 0 4.45508 0 4.77675C0 5.34508 0.743333 8.17092 3.45667 11.9042C5.265 14.4526 7.81167 15.8334 10.1283 15.8334C11.5208 15.8334 11.6908 15.5268 11.6908 14.9993C11.6908 12.5642 11.565 12.3342 12.2625 12.3342C12.5858 12.3342 13.1425 12.4943 14.4425 13.7234C15.9283 15.1809 16.1725 15.8334 17.0042 15.8334H19.1908C19.8142 15.8334 20.13 15.5268 19.9483 14.9218C19.5325 13.6493 16.7225 11.0317 16.5958 10.8567Z" fill="#4C858B"/>
 </g>
@@ -42,7 +38,7 @@
 </clipPath>
 </defs>
 </svg>
-</a><a class="header__social-link" href="#"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+</a><a class="social__link" href="#"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_301_47)">
 <path d="M7.45514 12.6508L7.14085 17.3041C7.59052 17.3041 7.78527 17.1008 8.01881 16.8566L10.127 14.7358L14.4954 18.1033C15.2966 18.5733 15.8611 18.3258 16.0772 17.3274L18.9446 3.1841L18.9454 3.18326C19.1995 1.9366 18.5171 1.4491 17.7365 1.75493L0.881935 8.54743C-0.268356 9.01743 -0.25094 9.69243 0.686394 9.99826L4.99544 11.4091L15.0045 4.8166C15.4755 4.48826 15.9038 4.66993 15.5515 4.99826L7.45514 12.6508Z" fill="#4C858B"/>
 </g>
@@ -52,15 +48,16 @@
 </clipPath>
 </defs>
 </svg>
-</a><a class="header__social-link" href="#"><svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+</a><a class="social__link" href="#"><svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.9396 0H4.06036C1.82144 0 0 1.94287 0 4.33105V11.669C0 14.0571 1.82144 16 4.06036 16H10.9397C13.1785 16 15 14.0571 15 11.669V4.33105C15 1.94287 13.1785 0 10.9396 0V0ZM7.49999 12.3749C5.23841 12.3749 3.39855 10.4123 3.39855 7.99998C3.39855 5.58764 5.23841 3.62512 7.49999 3.62512C9.76156 3.62512 11.6014 5.58764 11.6014 7.99998C11.6014 10.4123 9.76156 12.3749 7.49999 12.3749ZM11.6995 4.65685C11.0312 4.65685 10.4876 4.07702 10.4876 3.36413C10.4876 2.65124 11.0312 2.07129 11.6995 2.07129C12.3678 2.07129 12.9115 2.65124 12.9115 3.36413C12.9115 4.07702 12.3678 4.65685 11.6995 4.65685Z" fill="#4C858B"/>
 <path d="M7.49997 4.56299C5.72339 4.56299 4.27789 6.10473 4.27789 7.99987C4.27789 9.89489 5.72339 11.4368 7.49997 11.4368C9.27666 11.4368 10.722 9.89489 10.722 7.99987C10.722 6.10473 9.27666 4.56299 7.49997 4.56299Z" fill="#4C858B"/>
 <path d="M11.6995 3.00928C11.5162 3.00928 11.3669 3.16846 11.3669 3.36401C11.3669 3.55957 11.5162 3.71875 11.6995 3.71875C11.883 3.71875 12.0322 3.55969 12.0322 3.36401C12.0322 3.16833 11.883 3.00928 11.6995 3.00928Z" fill="#4C858B"/>
 </svg>
-</a><a class="header__social-link" href="#"><svg class='123' width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+</a><a class="social__link" href="#"><svg class='123' width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.50187 0H7.49813C3.36281 0 0 3.588 0 8C0 9.75 0.52875 11.372 1.42781 12.689L0.493125 15.661L3.37594 14.678C4.56187 15.516 5.97656 16 7.50187 16C11.6372 16 15 12.411 15 8C15 3.589 11.6372 0 7.50187 0ZM11.8659 11.297C11.685 11.842 10.9669 12.294 10.3941 12.426C10.0022 12.515 9.49031 12.586 7.76719 11.824C5.56312 10.85 4.14375 8.461 4.03312 8.306C3.92719 8.151 3.1425 7.041 3.1425 5.893C3.1425 4.745 3.68906 4.186 3.90938 3.946C4.09031 3.749 4.38937 3.659 4.67625 3.659C4.76906 3.659 4.8525 3.664 4.9275 3.668C5.14781 3.678 5.25844 3.692 5.40375 4.063C5.58469 4.528 6.02531 5.676 6.07781 5.794C6.13125 5.912 6.18469 6.072 6.10969 6.227C6.03938 6.387 5.9775 6.458 5.86687 6.594C5.75625 6.73 5.65125 6.834 5.54062 6.98C5.43937 7.107 5.325 7.243 5.4525 7.478C5.58 7.708 6.02063 8.475 6.66937 9.091C7.50656 9.886 8.18531 10.14 8.42812 10.248C8.60906 10.328 8.82469 10.309 8.95687 10.159C9.12469 9.966 9.33187 9.646 9.54281 9.331C9.69281 9.105 9.88219 9.077 10.0809 9.157C10.2834 9.232 11.355 9.797 11.5753 9.914C11.7956 10.032 11.9409 10.088 11.9944 10.187C12.0469 10.286 12.0469 10.751 11.8659 11.297Z" fill="#4C858B"/>
 </svg>
 </a></div>
+            </div>
             <div class="header__shopping-group"> 
               <button class="header__shopping-button"><svg  width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_301_23)">
@@ -99,11 +96,11 @@
           </div>
         </div>
       </header>
-      <section class="hero">
-        <div class="container hero__container"> 
-          <h1 class="hero__title">Монтаж дымоходов</h1>
-          <div class="hero__home"> <a class="hero__home-link" href="#">Главная</a><span class="hero__home-location">Монтаж дымоходов</span></div>
-          <p class="hero__text">В <span class="hero__text--accent">Дымоход.ру</span> вам помогут как приобрести, так и установить дымоход любой конфигурации. 
+      <section class="breadcrumbs">
+        <div class="container">
+          <h1 class="breadcrumbs__title">Монтаж дымоходов</h1>
+          <div class="breadcrumbs__home"> <a class="breadcrumbs__home-link" href="#">Главная</a><span class="breadcrumbs__home-location">Монтаж дымоходов</span></div>
+          <p class="breadcrumbs__text">В <span class="breadcrumbs__text--accent">Дымоход.ру</span> вам помогут как приобрести, так и установить дымоход любой конфигурации. 
              В нашем монтажном отделе, состоящим из трёх бригад работают квалифицированные специалисты, 
              которые ежегодно проходят курсы повышения квалификации. 
              Все работы проводим качественно и аккуратно, в короткий срок и на совесть.
@@ -114,8 +111,8 @@
         <div class="container banner__container">
           <div class="banner__wrapper">
             <div class="banner__text-wrapper">
-              <div class="banner__title-wrapper"> 
-                <h3 class="banner__title-medium">Lorem ipsum dolor sit amet</h3>
+              <div class="banner__title-wrapper">
+                <h2 class="section-title">Lorem ipsum dolor sit amet</h2>
                 <h2 class="banner__title-big">Lorem ipsum</h2>
               </div>
               <div class="banner__advantage-wrapper">
@@ -135,41 +132,41 @@
         </div>
       </section>
       <section class="mounting">
-        <div class="container mounting__container">
+        <div class="container">
           <div class="separator mounting__separator"></div>
-          <h3 class="mounting__title">Процесс выполнения монтажа</h3>
-          <div class="mounting__services">
-            <div class="mounting__services-item">
-              <div class="mounting__services-number">1</div>
-              <div class="mounting__services-description">Рассчёт предварительной заявки</div>
-            </div>
-            <div class="mounting__services-item">
-              <div class="mounting__services-number">2</div>
-              <div class="mounting__services-description">Замер объекта нашим инженером</div>
-            </div>
-            <div class="mounting__services-item">
-              <div class="mounting__services-number">3</div>
-              <div class="mounting__services-description">Составление Коммерческого предложения по изделиям дымохода и окончательной сметы на  работы </div>
-            </div>
-            <div class="mounting__services-item">
-              <div class="mounting__services-number">4</div>
-              <div class="mounting__services-description">Изготовление Дымохода, покраска (если требуется)</div>
-            </div>
-            <div class="mounting__services-item">
-              <div class="mounting__services-number">5</div>
-              <div class="mounting__services-description">Монтаж продукции, проверка и наладкапробный запуск системы и последующая эксплуатация</div>
-            </div>
-            <div class="mounting__services-item">
-              <div class="mounting__services-number">6</div>
-              <div class="mounting__services-description">Гарантийное обслуживание по соответствующем сроку</div>
-            </div>
-          </div>
+          <h2 class="section-title">Процесс выполнения монтажа</h2>
+          <ul class="mounting__services">
+            <li class="mounting__services-item">
+              <div class="mounting__services-number"></div>
+              <p class="mounting__services-description">Рассчёт предварительной заявки</p>
+            </li>
+            <li class="mounting__services-item">
+              <div class="mounting__services-number"></div>
+              <p class="mounting__services-description">Замер объекта нашим инженером</p>
+            </li>
+            <li class="mounting__services-item">
+              <div class="mounting__services-number"></div>
+              <p class="mounting__services-description">Составление Коммерческого предложения по изделиям дымохода и окончательной сметы на  работы</p>
+            </li>
+            <li class="mounting__services-item">
+              <div class="mounting__services-number"></div>
+              <p class="mounting__services-description">Изготовление Дымохода, покраска (если требуется)</p>
+            </li>
+            <li class="mounting__services-item">
+              <div class="mounting__services-number"></div>
+              <p class="mounting__services-description">Монтаж продукции, проверка и наладкапробный запуск системы и последующая эксплуатация</p>
+            </li>
+            <li class="mounting__services-item">
+              <div class="mounting__services-number"></div>
+              <p class="mounting__services-description">Гарантийное обслуживание по соответствующем сроку</p>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="why"> 
-        <div class="container why__container">
+        <div class="container">
           <div class="separator why__separator"> </div>
-          <h3 class="why__title">Почему Дымоход.ру?</h3>
+          <h2 class="section-title">Почему Дымоход.ру?</h2>
           <p class="why__text">В отличие от других производителей, мы ручаемся за качество продукции, т.к. все Дымоходы изготавливаются из качественной стали, проверенного теплоизолятора, по современной технологии плазменной сварки «встык» </p>
           <div class="why__advantages"> 
             <div class="why__advantages-card"><svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -191,9 +188,9 @@
 </svg>
 
               <p class="why__advantages-card-title">Большой гарантийный срок</p>
-              <p class="why__advantages-card-text">Крепёж, стыковка элементов<span class="why__advantages-card-text--accent">– 10 лет</span></p>
-              <p class="why__advantages-card-text">Крепёж, стыковка элементов<span class="why__advantages-card-text--accent">– 10 лет</span></p>
-              <p class="why__advantages-card-text">Крепёж, стыковка элементов<span class="why__advantages-card-text--accent">– 10 лет</span></p>
+              <p class="why__advantages-card-text">Крепёж, стыковка элементов<span class="why__advantages-card-text-accent">– 10 лет</span></p>
+              <p class="why__advantages-card-text">Крепёж, стыковка элементов<span class="why__advantages-card-text-accent">– 10 лет</span></p>
+              <p class="why__advantages-card-text">Крепёж, стыковка элементов<span class="why__advantages-card-text-accent">– 10 лет</span></p>
             </div>
             <div class="why__advantages-card"><svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1_270)">
@@ -232,15 +229,12 @@
               <p class="why__advantages-card-text">Убедитесь в добросовестности исполнения, прочитав Отзывы клиентов в специальном разделе.</p>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="consultation"> 
-        <div class="container consultation__container"> 
-          <h2 class="consultation__title">необходима консультация?</h2>
-          <p class="consultation__action-call">оставьте заявку или свяжитесь с нами в социальных сетях</p>
-          <div class="consultation__social-wrapper">
-            <div class="consultation__social">
-               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="why__consultation"> 
+            <h2 class="why__consultation-title">необходима консультация?</h2>
+            <p class="why__consultation-action-call">оставьте заявку или свяжитесь с нами в социальных сетях</p>
+            <div class="why__consultation-social-wrapper">
+              <div class="why__consultation-social">
+                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_301_49)">
 <path d="M16.5958 10.8567C16.2725 10.4484 16.365 10.2667 16.5958 9.90175C16.6 9.89758 19.2692 6.20925 19.5442 4.95841L19.5458 4.95758C19.6825 4.50175 19.5458 4.16675 18.885 4.16675H16.6983C16.1417 4.16675 15.885 4.45425 15.7475 4.77591C15.7475 4.77591 14.6342 7.44092 13.0592 9.16842C12.5508 9.66758 12.3158 9.82758 12.0383 9.82758C11.9017 9.82758 11.6892 9.66758 11.6892 9.21175V4.95758C11.6892 4.41091 11.5333 4.16675 11.0725 4.16675H7.63417C7.285 4.16675 7.0775 4.42175 7.0775 4.65925C7.0775 5.17758 7.865 5.29675 7.94667 6.75508V9.91925C7.94667 10.6126 7.82083 10.7401 7.54167 10.7401C6.79833 10.7401 4.99417 8.06425 3.925 5.00175C3.70917 4.40758 3.49833 4.16758 2.9375 4.16758H0.75C0.125833 4.16758 0 4.45508 0 4.77675C0 5.34508 0.743333 8.17092 3.45667 11.9042C5.265 14.4526 7.81167 15.8334 10.1283 15.8334C11.5208 15.8334 11.6908 15.5268 11.6908 14.9993C11.6908 12.5642 11.565 12.3342 12.2625 12.3342C12.5858 12.3342 13.1425 12.4943 14.4425 13.7234C15.9283 15.1809 16.1725 15.8334 17.0042 15.8334H19.1908C19.8142 15.8334 20.13 15.5268 19.9483 14.9218C19.5325 13.6493 16.7225 11.0317 16.5958 10.8567Z" fill="#4C858B"/>
 </g>
@@ -250,7 +244,7 @@
 </clipPath>
 </defs>
 </svg>
-              <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_301_47)">
 <path d="M7.45514 12.6508L7.14085 17.3041C7.59052 17.3041 7.78527 17.1008 8.01881 16.8566L10.127 14.7358L14.4954 18.1033C15.2966 18.5733 15.8611 18.3258 16.0772 17.3274L18.9446 3.1841L18.9454 3.18326C19.1995 1.9366 18.5171 1.4491 17.7365 1.75493L0.881935 8.54743C-0.268356 9.01743 -0.25094 9.69243 0.686394 9.99826L4.99544 11.4091L15.0045 4.8166C15.4755 4.48826 15.9038 4.66993 15.5515 4.99826L7.45514 12.6508Z" fill="#4C858B"/>
 </g>
@@ -260,37 +254,38 @@
 </clipPath>
 </defs>
 </svg>
-              <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.9396 0H4.06036C1.82144 0 0 1.94287 0 4.33105V11.669C0 14.0571 1.82144 16 4.06036 16H10.9397C13.1785 16 15 14.0571 15 11.669V4.33105C15 1.94287 13.1785 0 10.9396 0V0ZM7.49999 12.3749C5.23841 12.3749 3.39855 10.4123 3.39855 7.99998C3.39855 5.58764 5.23841 3.62512 7.49999 3.62512C9.76156 3.62512 11.6014 5.58764 11.6014 7.99998C11.6014 10.4123 9.76156 12.3749 7.49999 12.3749ZM11.6995 4.65685C11.0312 4.65685 10.4876 4.07702 10.4876 3.36413C10.4876 2.65124 11.0312 2.07129 11.6995 2.07129C12.3678 2.07129 12.9115 2.65124 12.9115 3.36413C12.9115 4.07702 12.3678 4.65685 11.6995 4.65685Z" fill="#4C858B"/>
 <path d="M7.49997 4.56299C5.72339 4.56299 4.27789 6.10473 4.27789 7.99987C4.27789 9.89489 5.72339 11.4368 7.49997 11.4368C9.27666 11.4368 10.722 9.89489 10.722 7.99987C10.722 6.10473 9.27666 4.56299 7.49997 4.56299Z" fill="#4C858B"/>
 <path d="M11.6995 3.00928C11.5162 3.00928 11.3669 3.16846 11.3669 3.36401C11.3669 3.55957 11.5162 3.71875 11.6995 3.71875C11.883 3.71875 12.0322 3.55969 12.0322 3.36401C12.0322 3.16833 11.883 3.00928 11.6995 3.00928Z" fill="#4C858B"/>
 </svg>
-              <svg class='123' width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class='123' width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.50187 0H7.49813C3.36281 0 0 3.588 0 8C0 9.75 0.52875 11.372 1.42781 12.689L0.493125 15.661L3.37594 14.678C4.56187 15.516 5.97656 16 7.50187 16C11.6372 16 15 12.411 15 8C15 3.589 11.6372 0 7.50187 0ZM11.8659 11.297C11.685 11.842 10.9669 12.294 10.3941 12.426C10.0022 12.515 9.49031 12.586 7.76719 11.824C5.56312 10.85 4.14375 8.461 4.03312 8.306C3.92719 8.151 3.1425 7.041 3.1425 5.893C3.1425 4.745 3.68906 4.186 3.90938 3.946C4.09031 3.749 4.38937 3.659 4.67625 3.659C4.76906 3.659 4.8525 3.664 4.9275 3.668C5.14781 3.678 5.25844 3.692 5.40375 4.063C5.58469 4.528 6.02531 5.676 6.07781 5.794C6.13125 5.912 6.18469 6.072 6.10969 6.227C6.03938 6.387 5.9775 6.458 5.86687 6.594C5.75625 6.73 5.65125 6.834 5.54062 6.98C5.43937 7.107 5.325 7.243 5.4525 7.478C5.58 7.708 6.02063 8.475 6.66937 9.091C7.50656 9.886 8.18531 10.14 8.42812 10.248C8.60906 10.328 8.82469 10.309 8.95687 10.159C9.12469 9.966 9.33187 9.646 9.54281 9.331C9.69281 9.105 9.88219 9.077 10.0809 9.157C10.2834 9.232 11.355 9.797 11.5753 9.914C11.7956 10.032 11.9409 10.088 11.9944 10.187C12.0469 10.286 12.0469 10.751 11.8659 11.297Z" fill="#4C858B"/>
 </svg>
 
+              </div>
             </div>
-          </div>
-          <div class="consultation__form-wrapper">
-            <div class="consultation__form-inner">
-              <p class="consultation__form-title">
-                 Для <span class="consultation__form-title--accent">консультации </span>заполните форму!</p>
-              <p class="consultation__form-text">С Вами свяжутся в ближайшее время</p>
-              <form class="consultation__form" action="" method="POST">
-                <div class="consultation__form-fields">
-                  <input class="consultation__form__field" type="text" id="firstNameField" name="first-name" placeholder="Ваше имя">
-                  <input class="consultation__form__field" type="tel" id="phoneNumberField" name="phone" placeholder="Ваш телефон">
-                  <button class="consultation__form-button">отправить</button>
-                </div>
-              </form>
+            <div class="why__consultation-form-wrapper">
+              <div class="why__consultation-form-inner">
+                <p class="why__consultation-form-title">
+                   Для <span class="why__consultation-form-title--accent">консультации </span>заполните форму!</p>
+                <p class="why__consultation-form-text">С Вами свяжутся в ближайшее время</p>
+                <form class="why__consultation-form" action="" method="POST" id="consultaion-form">
+                  <div class="why__consultation-form-fields">
+                    <input class="why__consultation-form-field" type="text" id="first-name-field" name="first-name" placeholder="Ваше имя">
+                    <input class="why__consultation-form-field" type="tel" id="phone-number-field" name="phone" placeholder="Ваш телефон">
+                    <button class="why__consultation-form-button" type="submit" form="consultaion-form" name="submit-button">отправить</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="video"> 
-        <div class="container video__container">
+        <div class="container">
           <div class="separator video__separator"></div>
-          <h3 class="video__title">Видео об установке</h3>
+          <h3 class="section-title">Видео об установке</h3>
           <p class="video__text">
              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -303,9 +298,9 @@
         </div>
       </section>
       <section class="samples"> 
-        <div class="container samples__container">
+        <div class="container">
           <div class="separator samples__separator"></div>
-          <h2 class="samples__title">Фото выполненных работ</h2>
+          <h2 class="section-title">Фото выполненных работ</h2>
           <p class="samples__text">
              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -328,17 +323,15 @@
         </div>
       </section>
       <footer class="footer"> 
-        <div class="container footer__container">
+        <div class="container">
           <div class="footer__inner">
             <div class="footer__catalog"> 
-              <p class="footer__title footer__title--catalog">КАТАЛОГ</p>
-              <ul class="footer__list footer__catalog-list--left">
+              <p class="footer__title footer__title--catalog">Каталог</p>
+              <ul class="footer__list">
                 <li class="footer__catalog-item"> <a class="footer__link" href="#">Дымоходы</a></li>
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Дымососы</a></li>
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Печи для дома</a></li>
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Печи для бани</a></li>
-              </ul>
-              <ul class="footer__list footer__catalog-list--right"> 
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Камины</a></li>
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Силикат кальция</a></li>
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Котлы</a></li>
@@ -346,21 +339,19 @@
               </ul>
             </div>
             <div class="footer__information">
-              <p class="footer__title footer__title--information">ИНФОРМАЦИЯ</p>
-              <ul class="footer__list footer__information-list--left">
+              <p class="footer__title footer__title--information">Информация</p>
+              <ul class="footer__list">
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Дымоходы</a></li>
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Дымососы</a></li>
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Печи для дома</a></li>
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Печи для бани</a></li>
-              </ul>
-              <ul class="footer__list footer__information-list--right">
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Полезное</a></li>
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Контакты</a></li>
                 <li class="footer__catalog-item"><a class="footer__link" href="#">Оплата и доставка</a></li>
               </ul>
             </div>
             <div class="footer__worktime">
-              <p class="footer__title footer__title--worktime">ВРЕМЯ РАБОТЫ</p>
+              <p class="footer__title footer__title--worktime">время работы</p>
               <div class="footer__worktime-schedule">
                 <div class="footer__worktime-clock"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.5 0C3.3646 0 0 3.36442 0 7.5C0 11.6356 3.3646 15 7.5 15C11.6356 15 15 11.6356 15 7.5C15 3.36442 11.6354 0 7.5 0ZM7.5 13.9051C3.96826 13.9051 1.09488 11.0317 1.09488 7.5C1.09488 3.96826 3.96826 1.09488 7.5 1.09488C11.0317 1.09488 13.9051 3.96823 13.9051 7.49982C13.9051 11.0317 11.0317 13.9051 7.5 13.9051Z" fill="#4C858B"/>

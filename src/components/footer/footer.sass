@@ -1,56 +1,33 @@
 .footer
     background-color: #0C2F33
-    &__container
-        max-width: 1220px
     &__inner
-        display: grid
-        grid-template-columns: 1fr 1fr 1fr
-        column-gap: 90px
         padding: 90px 0
-    &__catalog
-        display: grid
-        grid-template-columns: 1fr 1fr
-        grid-template-rows: 27px 125px
-        grid-row-gap: 18px
-        grid-template-areas: 'title title' 'left right'
+        columns: 3 
     &__title
         font-family: bold
         font-size: 22px
         color: #FFFFFF
-        grid-area: title
+        text-transform: uppercase
+        margin-bottom: 18px
+    &__list
+        columns: 2
+        list-style: none
+        padding: 0
+    &__catalog
+        // margin-right: 105px
     &__catalog-item
         font-family: regular
         font-size: 14px
         color: #FFFFFF
-    &__list
-        list-style: none
-        padding: 0
-        display: flex
-        flex-direction: column
-        justify-content: space-around
+        margin-bottom: 19px
     &__link
         text-decoration: none
         color: #FFFFFF
-    &__footer__catalog-list--left
-        grid-area: left
-    &__footer__catalog-list--right
-        grid-area: right
 
-    &__information
-        display: grid
-        grid-template-columns: 1fr 1fr
-        grid-template-rows: 27px 125px
-        grid-row-gap: 18px
-        grid-template-areas: 'title title' 'left right'
-    &__footer__information-list--left
-        grid-area: left
-    &__footer__information-list--right
-        grid-area: right
-
+  
     &__worktime-schedule
         display: flex
-        margin-bottom: 8px
-        
+        margin-bottom: 8px    
     &__worktime-clock
         margin-right: 8px
     &__worktime-text--left
@@ -75,5 +52,58 @@
     
     &__title--worktime 
         margin-bottom: 16px
+    // &__container
+    //     max-width: 1220px
+//     // &__inner
+//     //     display: grid
+//     //     grid-template-columns: 1fr 1fr 1fr
+//     //     column-gap: 90px
+//     //     padding: 90px 0
+//     &__catalog
+//         display: grid
+//         grid-template-columns: 1fr 1fr
+//         grid-template-rows: 27px 125px
+//         grid-row-gap: 18px
+//         grid-template-areas: 'title title' 'left right'
+//     &__title
+//         font-family: bold
+//         font-size: 22px
+//         color: #FFFFFF
+//         grid-area: title
+//     &__catalog-item
+//         font-family: regular
+//         font-size: 14px
+//         color: #FFFFFF
+//     &__list
+//         list-style: none
+//         padding: 0
+//         display: flex
+//         flex-direction: column
+//         justify-content: space-around
+//     &__link
+//         text-decoration: none
+//         color: #FFFFFF
+//     &__footer__catalog-list--left
+//         grid-area: left
+//     &__footer__catalog-list--right
+//         grid-area: right
+
+//     &__information
+//         display: grid
+//         grid-template-columns: 1fr 1fr
+//         grid-template-rows: 27px 125px
+//         grid-row-gap: 18px
+//         grid-template-areas: 'title title' 'left right'
+//     &__footer__information-list--left
+//         grid-area: left
+//     &__footer__information-list--right
+//         grid-area: right
 
     
+
+    
+
+    
+
+    // &__catalog
+        
